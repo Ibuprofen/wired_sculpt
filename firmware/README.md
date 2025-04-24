@@ -2,7 +2,7 @@
 
 1. Probably start here: https://docs.qmk.fm/newbs#overview
     1. Install QMK cli.
-    1. Set up QMK env (`qmk setup <github_username>/qmk_firmware` to clone your personal fork.).
+    1. Set up QMK env (`qmk setup` or `qmk setup <github_username>/qmk_firmware` to clone your personal fork.).
     1. `qmk console` with the keyboard plugged in and you should see output: `Ψ Console Connected: Plenary Design plenary_design_ms_sculpt (FEED:0000:1)`.
 1. `qmk env` and take note of the `$QMK_HOME`.
 1. Symlink or copy `plenary_design_ms_sculpt` directory into the `qmk_firwmare/keyboards`. `ln -s "$(pwd)/plenary_design_ms_sculpt" "$(qmk env | grep 'QMK_HOME' | cut -d'"' -f2)/keyboards/plenary_design_ms_sculpt"`.
